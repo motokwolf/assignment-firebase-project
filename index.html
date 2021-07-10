@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/login.css">
+</head>
+<body>
+    <div class="layout">
+        <header class="toplevel-header">
+           <div class="container top-bar">
+             
+             <a ><img src="https://cdn.discordapp.com/attachments/549668999324106782/862858870472310784/be.png" height="40px"></a>
+             <form class="search">
+             <label for="search">Search:</label>
+             <input type="search" id="search" name="search" >
+             </form>
+             <a><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="40px"></a>
+           </div>
+        </header>
+     
+     <main class="toplevel-main container">
+         <div class="side-bar">
+           <a><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="55px"></a>
+           <div class="sidebar-info">
+           <p>{username}</p>
+           </div>
+           <ul>
+             <li><a>Link</a></li>
+             <li><a>Link</a></li>
+             <li><a>Link</a></li>
+             <li><a>Link</a></li>
+           </ul>
+         </div>
+         <div class="timeline">
+           <div class="fixed-title"<p> newest posts</p> </div>
+           <div class="post">
+             <div class="post-header">
+               <a style="align-self:center"><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="20px"></a><p>username <span>timestamp</span></p></div>
+             <h2>This is a sample post title</h2>
+            <div class="post-text" id="post-text"> <p>this is the sample post content text</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tortor ac lorem efficitur imperdiet. Nulla tempus leo eu risus tempor malesuada. Phasellus a felis eget neque sagittis euismod nec ut velit. Sed odio mi, accumsan sit amet mauris at, pellentesque facilisis mi.</p>
+              </div>
+             <button onclick="showComments()">🖹 comments <small>▼</small></button>
+           <button> ❤ LIKES</button>
+             <!-- this for comments, will be hidden until clicked -->
+             <div class="comments animation" id="comments">
+             <div class="comment">
+               <div class="post-header">
+               <a style="align-self:center"><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="20px"></a><p>username <span>timestamp</span></p></div>
+               <div class="comment-text">
+                 <p>Sure bro, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tortor ac lorem efficitur imperdiet. </p>
+               </div>
+             <div class="comment">
+               <div class="post-header">
+               <a style="align-self:center"><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="20px"></a><p>username <span>timestamp</span></p></div>
+               <div class="comment-text">
+                 <p>Sure bro, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tortor ac lorem efficitur imperdiet. </p></div>
+             </div>
+               <div class="commenting">
+                 <form>
+     <a style="align-self:center"><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="20px"></a>
+                  <textarea  id="commenting" class="write-comment" ></textarea>
+                   <input type="submit"  value="comment">
+                 </form>
+               </div>
+             </div>
+               </div>
+           </div>
+           <div class="post">
+             <p>this is a post</p>
+           </div>
+           <div class="post">
+             <p>this is a post</p>
+           </div>
+     <div class="post">
+             <p>this is a post</p>
+           </div>
+     <div class="post">
+             <p>this is a post</p>
+           </div>
+     <div class="post">
+             <p>this is a post</p>
+           </div>
+     <div class="post">
+             <p>this is a post</p>
+           </div>
+     <div class="post">
+             <p>this is a post</p>
+           </div>
+         </div>
+     </main>
+     
+     <footer class="toplevel-footer">
+           <div class="container">
+             <p>Copyright <sup>&copy;</sup> <span>2021</span> </p>
+           </div>
+     </footer>
+     </div>
+
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBCJ9X0ojCqhRm_3zKWyvRGPSdvorfjPtI",
+    authDomain: "assignment-firebase-project.firebaseapp.com",
+    projectId: "assignment-firebase-project",
+    storageBucket: "assignment-firebase-project.appspot.com",
+    messagingSenderId: "94758907514",
+    appId: "1:94758907514:web:0b634e37dc4d2f5fb7d5c3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+</html>
