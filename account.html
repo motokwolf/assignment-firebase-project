@@ -13,17 +13,17 @@
            <div class="container top-bar">
              
              <a href="index.html"><img src="https://cdn.discordapp.com/attachments/549668999324106782/862858870472310784/be.png" height="40px"></a>
-             <form class="search">
-             <label for="search">Search:</label>
-             <input type="search" id="search" name="search" >
-             </form>
              <!-- <a href="account.html"><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="40px"></a>
              <a href="logout.html">Log out</a> -->
            </div>
         </header>
 
         <main class="toplevel-main container">
+          <div class="center">
+            <div class="login-card">
+              
         <div class="userInfo">
+          <h1 style="font-size: 1.4em;">Create an Account</h1>
             <label for="firstname" class="firstName">First Name: 
             <input type="text" placeholder="first name" id="firstname"> </label>
             <br/><br/>
@@ -39,9 +39,11 @@
             <label for="password" class="password">Password:
             <input type="password" placeholder="password" id="password"> </label>
             <br/><br/><br/>
-            <input type="submit" class="submit" value="Submit" id="submit">
+            <input type="submit" class="submit" value="Create Account" id="submit">
           </div>
-        </main>
+        </div>
+      </div>
+    </main>
 
         <footer class="toplevel-footer">
             <div class="container">
@@ -72,7 +74,7 @@
     projectId: "assignment-firebase-project",
     storageBucket: "assignment-firebase-project.appspot.com",
     messagingSenderId: "94758907514",
-    appId: "1:94758907514:web:0b634e37dc4d2f5fb7d5c3"
+    appId: "1:94758907514:web:0b634e37dc4d2f5fb7d5c3",
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);

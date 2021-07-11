@@ -59,3 +59,53 @@ body {
     border-radius: 4px;
     color: #ddd;
   }
+
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .login-card {
+    width: 400px;
+    display: flex;
+    padding: 4em;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #BBF;
+      border-radius: 4px;
+      background: #444;
+      background: linear-gradient(180deg, #444 65%, #333 100%);
+    
+}
+
+.userInfo {
+  padding: 10px 18px;
+    margin: 0.8em 0;
+    border: none;
+    border-radius: 4px;
+    color: #ddd;
+}
+
+.userInfo input {
+  padding: 12px 18px;
+  margin: 0.8em 0;
+  border: none; 
+  border-radius: 4px;
+  color: #222;
+  width: calc(100% - 20px);
+}
+
+input[type="submit"] {
+  color: #222;
+  background-color: #BBF;
+  margin-right:10px;
+  max-width: 200px;
+}
+
+input[type="submit"]:hover {
+  opacity:75%;
+  
+}

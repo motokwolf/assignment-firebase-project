@@ -33,7 +33,7 @@ body {
     width: 100%;
     z-index:1;
     height: 50px;
-    filter: drop-shadow(0 2px 2px #bbb);
+    filter: drop-shadow(0 2px 2px black);
   }
   
   .top-bar {
