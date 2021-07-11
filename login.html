@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="src/login.css">
 
 </head>
 <body>
@@ -16,14 +16,14 @@
             <div class="login-card">
               <img src="https://cdn.discordapp.com/attachments/549668999324106782/862858870472310784/be.png" height="80px">
         
-              <form class="login-field">
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username">
-          <label for="pwd">Password:</label>
-          <input type="password" id="pwd" name="pwd">
-          <input type="submit" value="Log In" style="background-color: #ABF">
-          <input type="submit" value="Sign In" >
-        </form>
+              <div class="login-field">
+          <label for="email">Email Id:</label>
+          <input type="text" id="email" placeholder="email-id">
+          <label for="password">Password:</label>
+          <input type="password" id="password" placeholder="password">
+          <input type="submit" value="Log In" id="submit" style="background-color: #ABF">
+          <a href="sign-up.html"><input type="submit" value="Sign Up" id="sign-up"/></a>
+              </div>
             </div>
           </div>  
         </main>
@@ -35,28 +35,18 @@
         </footer>
         </div>
 
-         <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-     <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
-     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+         <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+         
+         <script src="src/firebase.js"></script>
+          <script src="src/login.js"></script>
+          <script src="src/script.js"></script>   
 
-     
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBCJ9X0ojCqhRm_3zKWyvRGPSdvorfjPtI",
-    authDomain: "assignment-firebase-project.firebaseapp.com",
-    projectId: "assignment-firebase-project",
-    storageBucket: "assignment-firebase-project.appspot.com",
-    messagingSenderId: "94758907514",
-    appId: "1:94758907514:web:0b634e37dc4d2f5fb7d5c3"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+<!-- <script src="src/firebase.js"></script> -->
 </body>
 </html>

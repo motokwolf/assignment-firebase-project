@@ -17,16 +17,18 @@
              <label for="search">Search:</label>
              <input type="search" id="search" name="search" >
              </form>
-             <a><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="40px"></a>
+             <a href="account.html"><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="40px"></a>
+             <a href="logout.html">Log out</a>
            </div>
         </header>
      
      <main class="toplevel-main container">
          <div class="side-bar">
-           <a><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="55px"></a>
+           <a href="index.html"><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="55px"></a>
            <div class="sidebar-info">
            <p>{username}</p>
-           </div>
+           </div class="socils">
+           <h2>Socials</h2>
            <ul>
              <li><a>Link</a></li>
              <li><a>Link</a></li>
@@ -35,7 +37,7 @@
            </ul>
          </div>
          <div class="timeline">
-           <div class="fixed-title"<p> newest posts</p> </div>
+           <div class="fixed-title"><h2> newest posts</h2> </div>
            <div class="post">
              <div class="post-header">
                <a style="align-self:center"><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="20px"></a><p>username <span>timestamp</span></p></div>
@@ -107,18 +109,7 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
      <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBCJ9X0ojCqhRm_3zKWyvRGPSdvorfjPtI",
-    authDomain: "assignment-firebase-project.firebaseapp.com",
-    projectId: "assignment-firebase-project",
-    storageBucket: "assignment-firebase-project.appspot.com",
-    messagingSenderId: "94758907514",
-    appId: "1:94758907514:web:0b634e37dc4d2f5fb7d5c3"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+     <script src="src/firebase.js"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>

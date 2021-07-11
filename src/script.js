@@ -11,5 +11,11 @@ function showComments() {
     }
   }
 
-
-  
+  firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+        
+    }
+    else{
+      window.location = "login.html";
+    }
+  });
