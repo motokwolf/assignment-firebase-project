@@ -67,6 +67,7 @@ body {
   .fixed-title {
     height: 30px;
     color: #777;
+    font-size: 0.8em;
   }
   
   .side-bar {

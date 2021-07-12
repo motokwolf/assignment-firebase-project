@@ -26,6 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // submit button function
+
+    var popup = document.getElementById("success-msg");
+
     submit.addEventListener("click", function() {
         if(email.value && password.value) {
             firebase
@@ -35,30 +38,27 @@ document.addEventListener("DOMContentLoaded", function () {
             const user = firebase.auth().currentUser
             addUser(user.uid, firstname.value, lastname.value, username.value);
 
+            popup.style.visibility = "visible";
+
             // Reset Values
             firstname.value = '';
             lastname.value = '';
             username.value = '';
             email.value = '';
-            password.value = '';
+            password.value = ''; 
             })
+
         .catch(function(error) {
             console.error(error);
         });
 
-        
-var popup = document.getElementById("success-msg");
 
-var submit = document.getElementById("submit");
-
-var span = document.getElementsByClassName("exit")[0];
-
-  submit.onclick =(this.click, function() {
-    popup.style.visibility = "visible";
-  })
-  span.onclick =("click", function() {
-    window.location = "login.html";
-  }) 
     }
     });
+
+    var span = document.getElementsByClassName("exit")[0];
+
+    span.onclick =("click", function() {
+        window.location = "login.html";
+      }) 
 });

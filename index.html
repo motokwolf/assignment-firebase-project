@@ -37,7 +37,7 @@
            </ul>
          </div>
          <div class="timeline">
-           <div class="fixed-title"><h2> newest posts</h2> </div>
+           <div class="fixed-title"><p> newest posts</p> </div>
            <div class="post">
              <div class="post-header">
                <a style="align-self:center"><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="20px"></a><p>username <span>timestamp</span></p></div>
@@ -111,5 +111,15 @@
 
      <script src="src/firebase.js"></script>
     <script src="src/script.js"></script>
+    <script>
+      firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+      userRef = user
+  }
+  else{
+    window.location = "login.html";
+  }
+});
+  </script>
 </body>
 </html>
