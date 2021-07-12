@@ -90,7 +90,7 @@
           <!-- this for comments, will be hidden until clicked -->
           <div class="comments animation" id="comments">
           ${commentsString}
-            <div class="commenting">
+            <div class="commenting" >
               <form method="post" id="comment-form">
                 <a style="align-self:center"><img src="https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png" height="20px"></a>
                 <textarea  id="commenting" class="write-comment" ></textarea>
@@ -149,18 +149,6 @@
         // addComment(blogid, text, author)
       }
     })
-  
-    function showComments() {
-      console.log(`click`)
-      var Post = document.getElementById("post-text")
-      var Comms = document.getElementById("comments");
-      if (Comms.style.display === "none") {
-        Post.classList.add("clear");
-        Comms.style.display = "block";
-      } else {
-        Post.classList.remove("clear");
-        Comms.style.display = "none";
-      }
-    }
+
     
   })

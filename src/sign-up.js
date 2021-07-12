@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(function (error) {
             console.error(error);
+            var message = error.message
+            alert(message)           
         });
     }
 
@@ -50,6 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         .catch(function(error) {
             console.error(error);
+            var message = error.message
+            alert(message)
+            
         });
 
 
