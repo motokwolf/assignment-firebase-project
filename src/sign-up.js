@@ -53,10 +53,10 @@ var submit = document.getElementById("submit");
 
 var span = document.getElementsByClassName("exit")[0];
 
-  submit.onclick = (this.click, function() {
+  submit.onclick =(this.click, function() {
     popup.style.visibility = "visible";
   })
-  span.onclick =(click, function() {
+  span.onclick =("click", function() {
     window.location = "login.html";
   }) 
     }
